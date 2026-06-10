@@ -6,14 +6,112 @@
 
 This document outlines potential future extensions to the Classic Models demo, building upon the foundation established in the current use cases. These scenarios demonstrate additional integration patterns and advanced capabilities that could be implemented to showcase a more comprehensive technology stack.
 
-**Current Use Cases:**
+**Current Use Cases (App Integration Focus):**
 - [Use Case 1: Lead-to-Cash Journey](use-case-1-lead-to-cash.md) - End-to-end integration automation
 - [Use Case 2: AI-Powered Customer Support](use-case-2-ai-support.md) - Interactive AI agent with human-in-the-loop
 - [Use Case 3: AI-Powered Lead Qualification](use-case-3-lead-qualification.md) - Automated AI agent embedded in workflow
 
-**Future Extensions:**
+**Future Technology Extensions:**
+- API Management with API Connect
+- B2B Integration with webMethods B2B SaaS
+- Managed File Transfer with webMethods MFT SaaS
+- Guaranteed Messaging with IBM MQ
+- Event Streaming with Kafka
+
+**Future Use Case Extensions:**
 - Use Case 4: Inventory Management with B2B Integration
-- Use Case 5: Proactive Issue Detection with Event Processing
+- Use Case 5: Trend analysis with Confluent and streaming analytics
+
+---
+
+## Future Technology Capabilities
+
+The current demo focuses on **application integration** using webMethods Integration, watsonx Orchestrate, and DataPower Interact Gateway. The following technologies could be added to demonstrate additional integration patterns:
+
+### API Management with API Connect
+
+**Purpose**: Centralized API governance, security, and lifecycle management
+
+**Capabilities**:
+- API gateway for rate limiting, throttling, and security
+- Developer portal for API documentation and self-service
+- API analytics and monitoring
+- OAuth/JWT authentication and authorization
+- API versioning and lifecycle management
+
+**Use Cases**:
+- Expose Classic Models ERP APIs to external partners
+- Manage API keys and access control for third-party integrations
+- Monitor API usage and performance
+- Implement API monetization strategies
+
+### B2B Integration with webMethods B2B SaaS
+
+**Purpose**: Electronic Data Interchange (EDI) and partner integration
+
+**Capabilities**:
+- EDI translation (X12, EDIFACT, XML)
+- AS2, SFTP, and other B2B protocols
+- Trading partner management
+- Document tracking and audit trails
+- Compliance with industry standards
+
+**Use Cases**:
+- Automated purchase orders to suppliers
+- Electronic invoicing with customers
+- Advance Ship Notices (ASN) from suppliers
+- Inventory replenishment automation
+
+### Managed File Transfer with webMethods MFT SaaS
+
+**Purpose**: Secure, reliable file transfer between systems
+
+**Capabilities**:
+- Encrypted file transfer (SFTP, FTPS)
+- Scheduled and event-driven transfers
+- File transformation and validation
+- Audit trails and compliance reporting
+- Large file handling
+
+**Use Cases**:
+- Daily inventory reports from ERP to data warehouse
+- Product catalog updates to e-commerce platform
+- Financial reconciliation files to accounting system
+- Batch customer data imports/exports
+
+### Event Streaming with Kafka
+
+**Purpose**: Real-time event streaming and processing
+
+**Capabilities**:
+- High-throughput message streaming
+- Event sourcing and replay
+- Multiple consumer support
+- Distributed architecture for scalability
+- Event history and analytics
+
+**Use Cases**:
+- Order status change events
+- Inventory level updates
+- Customer activity tracking
+- Real-time analytics and dashboards
+
+### Guaranteed Messaging with IBM MQ
+
+**Purpose**: Reliable, transactional message delivery
+
+**Capabilities**:
+- Guaranteed delivery (exactly-once processing)
+- Persistent message storage
+- Transactional messaging
+- Dead letter queues for error handling
+- High availability and disaster recovery
+
+**Use Cases**:
+- Critical order processing
+- Payment transaction handling
+- Financial data synchronization
+- Mission-critical system integration
 
 ---
 
@@ -360,31 +458,17 @@ Proactive Customer Outreach → Issue Resolution
 
 ---
 
-## Technology Stack Additions
+## Technology Stack Evolution
 
-The future use cases introduce the following technologies to the Classic Models demo stack:
+### Current Stack (App Integration Focus)
 
-### New Components
+| Layer | Technologies |
+|-------|-------------|
+| **Integration & Orchestration** | webMethods Integration |
+| **AI & Automation** | watsonx Orchestrate, DataPower Interact Gateway (MCP) |
+| **Core Systems** | Classic Models ERP, HubSpot, Stripe, Zendesk, Jotform |
 
-1. **webMethods B2B SaaS**
-   - EDI translation and validation
-   - AS2 communication protocol
-   - Trading partner management
-   - B2B transaction monitoring
-
-2. **IBM Event Processing (Apache Flink)**
-   - Real-time stream processing
-   - Complex event processing (CEP)
-   - Stateful computations
-   - Pattern detection and analytics
-
-### Enhanced Components
-
-- **Kafka** - Expanded role as central event bus for inventory and operational events
-- **webMethods Integration** - Additional workflows for inventory management and B2B orchestration
-- **Classic Models ERP** - Enhanced event publishing for inventory and shipment tracking
-
-### Complete Technology Stack
+### Future Stack (Comprehensive Integration Platform)
 
 | Layer | Technologies |
 |-------|-------------|
@@ -394,6 +478,40 @@ The future use cases introduce the following technologies to the Classic Models 
 | **Stream Processing** | IBM Event Processing (Flink) |
 | **AI & Automation** | watsonx Orchestrate, DataPower Interact Gateway (MCP) |
 | **Core Systems** | Classic Models ERP, HubSpot, Stripe, Zendesk, Jotform |
+
+### New Components for Future Use Cases
+
+1. **API Connect**
+   - API gateway and management
+   - Developer portal
+   - API analytics and monitoring
+
+2. **webMethods B2B SaaS**
+   - EDI translation and validation
+   - AS2 communication protocol
+   - Trading partner management
+   - B2B transaction monitoring
+
+3. **webMethods MFT SaaS**
+   - Secure file transfer
+   - Scheduled and event-driven transfers
+   - File transformation and validation
+
+4. **Kafka**
+   - Event streaming platform
+   - High-throughput messaging
+   - Event sourcing and replay
+
+5. **IBM MQ**
+   - Guaranteed message delivery
+   - Transactional messaging
+   - Persistent message storage
+
+6. **IBM Event Processing (Apache Flink)**
+   - Real-time stream processing
+   - Complex event processing (CEP)
+   - Stateful computations
+   - Pattern detection and analytics
 
 ---
 

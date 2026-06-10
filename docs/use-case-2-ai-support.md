@@ -36,7 +36,7 @@ A customer (Mini GT Models, a hobby shop in Chicago) contacts support saying the
 
 4. Sarah asks agent: "Show me details for ticket #12345"
 5. Agent uses MCP tools via DataPower Interact Gateway:
-   - **get_zendesk_ticket** - Retrieves ticket: "Missing order, customer needs for weekend sale"
+   - **get_crm_ticket** - Retrieves ticket: "Missing order, customer needs for weekend sale"
    - **get_hubspot_contact** - Fetches: Mini GT Models, Chicago, contact: Mike Chen
    - **get_hubspot_company** - Gets: Long-time customer, $50K annual revenue
    - **get_erp_customer** - Customer #456, credit limit $10K, good payment history
@@ -110,8 +110,8 @@ A customer (Mini GT Models, a hobby shop in Chicago) contacts support saying the
 
 - **watsonx Orchestrate** - AI agent interface for customer success rep
 - **DataPower Interact Gateway** - AI Gateway with MCP tool server
-- **API Connect** - API management for backend systems
 - **webMethods Integration** - Data transformation and enrichment
+- **REST APIs** - Integration with HubSpot, Classic Models ERP, and Zendesk
 
 ## Key Benefits
 

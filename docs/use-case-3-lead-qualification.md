@@ -12,7 +12,7 @@ A prospect fills out a Jotform on Classic Models' website expressing interest in
 
 ## Systems Involved
 
-**Jotform** → **webMethods Integration** → **watsonx Orchestrate Agent** (via DataPower Interact Gateway) → **HubSpot**
+**Jotform** → **webMethods Integration** → **watsonx Orchestrate Agent** → **HubSpot**
 
 ## The Journey
 
@@ -30,14 +30,14 @@ A prospect fills out a Jotform on Classic Models' website expressing interest in
 
 ### Phase 2: AI-Powered Qualification
 
-4. webMethods workflow invokes watsonx Orchestrate agent via DataPower Interact Gateway
+4. webMethods workflow invokes watsonx Orchestrate agent
 5. Agent analyzes submission against qualification criteria:
    - **Business Type**: Must be retail/hobby shop (✓ Retail Store)
    - **Revenue**: Minimum $250K annual (✓ $500K)
    - **Product Fit**: Interest in our product lines (✓ Classic & Vintage Cars)
    - **Geographic Coverage**: Check if territory available
    - **Existing Customer**: Check if already in ERP
-6. watsonx Orchestrate agent uses MCP tools via DataPower Interact Gateway:
+6. watsonx Orchestrate agent uses MCP tools:
    - **check_erp_customer** - Verify not already a customer
    - **check_territory_availability** - Confirm territory open
    - **enrich_company_data** - Get additional business info (LinkedIn, company website, etc.)
@@ -82,11 +82,10 @@ A prospect fills out a Jotform on Classic Models' website expressing interest in
 
 ## Integration Technologies
 
-- **webMethods Integration** for workflow orchestration
-- **watsonx Orchestrate** for AI agent (embedded in workflow)
-- **DataPower Interact Gateway** for AI agent invocation with MCP tools
-- **API Connect** for HubSpot and ERP API access
-- **Kafka** for lead qualification events
+- **watsonx Orchestrate** - AI agent (embedded in workflow)
+- **webMethods Integration** - Workflow orchestration and data transformation
+- **webMethods Connectors** - Connectivity to Jotform, and Hubspot
+- **REST APIs** - Classic Models ERP
 
 ## MCP Tools Used by Agent
 

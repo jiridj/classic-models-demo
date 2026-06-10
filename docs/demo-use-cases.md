@@ -41,13 +41,8 @@ Classic Models uses the following systems for their business operations:
 ## Technology Stack
 
 - **webMethods Integration** - Workflow orchestration and data transformation
-- **API Connect** - API management and security
 - **DataPower Interact Gateway** - AI Gateway with MCP tools
 - **watsonx Orchestrate** - AI agent platform
-- **IBM MQ** - Guaranteed message delivery
-- **Kafka** - Event streaming
-- **webMethods B2B SaaS** - B2B integration
-- **webMethods MFT SaaS** - Managed file transfer
 
 ## Use Cases
 
@@ -57,9 +52,8 @@ Classic Models uses the following systems for their business operations:
 
 Complete flow from lead capture through order fulfillment, demonstrating:
 - webMethods Integration orchestration
-- IBM MQ for guaranteed order/payment delivery
-- Kafka for real-time status events
 - Multi-system integration (Jotform → HubSpot → ERP → Stripe)
+- Reliable order and payment processing
 
 **Key Scenario**: Prospect fills out form → Sales qualification → Deal closed → Order created → Payment processed → Order fulfilled
 
@@ -109,6 +103,11 @@ watsonx Orchestrate agent automatically qualifies and enriches leads, demonstrat
 Looking ahead, additional use cases could further demonstrate the platform's capabilities:
 
 - **[Future Use Cases](future-use-cases.md)** - Potential extensions including:
+  - API Management with API Connect
+  - B2B Integration with webMethods B2B SaaS
+  - Managed File Transfer with webMethods MFT SaaS
+  - Event Streaming with Kafka
+  - Guaranteed Messaging with IBM MQ
   - Use Case 4: Inventory Management with B2B Integration
   - Use Case 5: Proactive Issue Detection with Event Processing
 
